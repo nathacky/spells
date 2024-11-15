@@ -14,6 +14,7 @@ sheet -> funktion: sheet auslesen (zugriff!) -> return: url
 	alle Attribute abgedeckt?
 	struktur/format: Haupttext
 	Tabellen???
+	abchecken ob alle fett gedruckten attribute schon dabei sind (suche alle strong + if abfrage)
 -> funtion: reinschreiben (zugriff!) -> return: sheet
 
 

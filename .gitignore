@@ -1,0 +1,7 @@
+client_secret_322392515713-9hsiekfj9bj8rb1uf89rmr5sc76u2f2l.apps.googleusercontent.com(1).json
+credentials.json
+token.json
+quotes.jsonl
+/__pychache__/*
+/venv/*
+*.pyc

@@ -1,0 +1,23 @@
+PROJEKTPLAN
+
+sheet
+	Spalten: alle + wer kann welchen spell
+	Schön
+	Filter
+	core spells einfügen
+	doppelte Spells
+
+PYTHON:
+sheet -> funktion: sheet auslesen (zugriff!) -> return: url 
+-> funktion: scraper -> return: spell scrapy.Item
+	neu als spell scrapy.Item
+	alle Attribute abgedeckt?
+	struktur/format: Haupttext
+	Tabellen???
+	abchecken ob alle fett gedruckten attribute schon dabei sind (suche alle strong + if abfrage)
+-> funtion: reinschreiben (zugriff!) -> return: sheet
+
+
+
+level 2: latex spellbook + tabelle
+design (ev. overleaf template)

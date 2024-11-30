@@ -1,16 +1,51 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from dataclasses import dataclass
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+@dataclass
+class Spell:
+    name: str
+    level: str
+    components: str
+    casting_time: str
+    spell_range: str
+    target: str
+    effect: str
+    area: str
+    duration: str
+    saving_throw: str
+    spell_resistance: str
+    source: str
+    url: str
+    description: str
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+class DerScraper:
+    def parse_url(self, url: str) -> Spell:
+        s = Spell()
+        raise NotImplementedError
+    
+class DummyScraper(DerScraper):
+    def parse_url(self, url: str) -> Spell:
+        s = Spell()
+        s.name = "Fireball"
+        s.area = "big"
+        s.spell_range = "short"
+        s.description = "u gonna get hurt bro"
+        return s
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+class DasSpreadsheet:
+    def __init__(self, scraper: DerScraper):
+        self.scraper = scraper
+        # verbindung herstellen
+        raise NotImplementedError
+
+    def parse_line(self, linenumber: int):
+        #get url
+        #Scraper.parse_url()
+        #wieder ins spreadsheet schreiben
+        raise NotImplementedError
+    
+    def parse_all(self):
+        raise NotImplementedError
+ 

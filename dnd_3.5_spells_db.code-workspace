@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../Python Projects"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"name": "spells",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
